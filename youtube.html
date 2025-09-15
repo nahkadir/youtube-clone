@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+          <div class="tooltip">YouTube apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg">
+          <div class="notifications-count">9+</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <img class="current-user-picture" src="channel-pictures/my-channel.jpg"> 
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+    
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=Ip3X9LOh2dk">
+              <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+            </a>
+            <div class="video-time">10:02</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@3blue1brown">
+                <img class="profile-picture" src="channel-pictures/channel-1.jpg">
+              </a>
+                <div class="channel-tooltip">
+                  <img src="channel-pictures/channel-1.jpg" class="channel-tooltip-picture">
+                  <div>
+                    <div class="channel-tooltip-name">3Blue1Brown</div>
+                    <div class="channel-tooltip-subscribers">7.62M subscribers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://www.youtube.com/watch?v=Ip3X9LOh2dk"> 
+                The determinant | Chapter 6, Essence of linear algebra
+              </a>
+              <p class="video-author">
+                3Blue1Brown
+              </p>
+              <p class="video-stats">
+                4.3M views &#183; 9 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=x7X9w_GIm1s">
+              <img class="thumbnail" src="thumbnails/thumbnail-2.jpg">
+            </a>
+            <div class="video-time">2:23</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@Fireship">
+                <img class="profile-picture" src="channel-pictures/channel-2.jpg">
+              </a>
+                <div class="channel-tooltip">
+                  <img src="channel-pictures/channel-2.jpg" class="channel-tooltip-picture">
+                  <div>
+                    <div class="channel-tooltip-name">Fireship</div>
+                    <div class="channel-tooltip-subscribers">3.98M subscribers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://www.youtube.com/watch?v=x7X9w_GIm1s"> 
+               Python in 100 Seconds
+              </a>
+              <p class="video-author">
+                Fireship
+              </p>
+              <p class="video-stats">
+                2.8M views &#183; 3 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=9FqwhW0B3tY">
+              <img class="thumbnail" src="thumbnails/thumbnail-3.jpg">
+            </a>
+            <div class="video-time">48:31</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@Netflix">
+                <img class="profile-picture" src="channel-pictures/channel-3.jpg">
+              </a>
+                <div class="channel-tooltip">
+                  <img src="channel-pictures/channel-3.jpg" class="channel-tooltip-picture">
+                  <div>
+                    <div class="channel-tooltip-name">Netflix</div>
+                    <div class="channel-tooltip-subscribers">31.6M subscribers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://www.youtube.com/watch?v=9FqwhW0B3tY"> 
+                Our Planet | High Seas | FULL EPISODE | Netflix
+              </a>
+              <p class="video-author">
+                Netflix
+              </p>
+              <p class="video-stats">
+                38M views &#183; 5 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=4wIBCoxuOJ0">
+              <img class="thumbnail" src="thumbnails/thumbnail-4.jpg">
+            </a>
+            <div class="video-time">5:31</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@TEDEd">
+                <img class="profile-picture" src="channel-pictures/channel-4.jpg">
+              </a>
+                <div class="channel-tooltip">
+                  <img src="channel-pictures/channel-4.jpg" class="channel-tooltip-picture">
+                  <div>
+                    <div class="channel-tooltip-name">TED-Ed</div>
+                    <div class="channel-tooltip-subscribers">21.8M subscribers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://www.youtube.com/watch?v=4wIBCoxuOJ0"> 
+              How one scientist averted a national health crisis - Andrea Tone
+              </a>
+              <p class="video-author">
+                TED-Ed
+              </p>
+              <p class="video-stats">
+                1.9M views &#183; 7 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=rvUzuK0ygI4">
+              <img class="thumbnail" src="thumbnails/thumbnail-5.jpg">
+            </a>
+            <div class="video-time">8:08</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@theodd1sout">
+                <img class="profile-picture" src="channel-pictures/channel-5.jpg">
+              </a>
+                <div class="channel-tooltip">
+                  <img src="channel-pictures/channel-5.jpg" class="channel-tooltip-picture">
+                  <div>
+                    <div class="channel-tooltip-name">TheOdd1sOut</div>
+                    <div class="channel-tooltip-subscribers">20.6M subscribers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://www.youtube.com/watch?v=rvUzuK0ygI4"> 
+              Tabletop Games
+              </a>
+              <p class="video-author">
+                TheOdd1sOut
+              </p>
+              <p class="video-stats">
+                107M views &#183; 6 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=q4GdJVvdxss">
+              <img class="thumbnail" src="thumbnails/thumbnail-6.jpg">
+            </a>
+            <div class="video-time">1:24</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@PlayStation">
+                <img class="profile-picture" src="channel-pictures/channel-6.jpg">
+              </a>
+                <div class="channel-tooltip">
+                  <img src="channel-pictures/channel-6.jpg" class="channel-tooltip-picture">
+                  <div>
+                    <div class="channel-tooltip-name">PlayStation</div>
+                    <div class="channel-tooltip-subscribers">16.5M subscribers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://www.youtube.com/watch?v=q4GdJVvdxss"> 
+                Marvel’s Spider-Man – Be Greater Extended Trailer | PS4
+              </a>
+              <p class="video-author">
+                PlayStation
+              </p>
+              <p class="video-stats">
+                20M views &#183; 6 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=yg_497u6JnA">
+              <img class="thumbnail" src="thumbnails/thumbnail-7.jpg">
+            </a>
+            <div class="video-time">12:02</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@TheOrganicChemistryTutor">
+                <img class="profile-picture" src="channel-pictures/channel-7.jpg">
+              </a>
+                <div class="channel-tooltip">
+                  <img src="channel-pictures/channel-7.jpg" class="channel-tooltip-picture">
+                  <div>
+                    <div class="channel-tooltip-name">The Organic Chemistry Tutor</div>
+                    <div class="channel-tooltip-subscribers">9.72M subscribers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://www.youtube.com/watch?v=yg_497u6JnA"> 
+                Derivatives of Exponential Functions
+              </a>
+              <p class="video-author">
+                The Organic Chemistry Tutor
+              </p>
+              <p class="video-stats">
+                2.2M views &#183; 7 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=0ZedyrztolA">
+              <img class="thumbnail" src="thumbnails/thumbnail-8.jpg">
+            </a>
+            <div class="video-time">8:56</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@Dave2D">
+                <img class="profile-picture" src="channel-pictures/channel-8.jpg">
+              </a>
+                <div class="channel-tooltip">
+                  <img src="channel-pictures/channel-8.jpg" class="channel-tooltip-picture">
+                  <div>
+                    <div class="channel-tooltip-name">Dave2D</div>
+                    <div class="channel-tooltip-subscribers">3.68 subscribers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://www.youtube.com/watch?v=0ZedyrztolA"> 
+                RTX 5080 Gaming Laptops ft. Asus Strix 16
+              </a>
+              <p class="video-author">
+                Dave2D
+              </p>
+              <p class="video-stats">
+                317K views &#183; 5 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=w6JFRi0Qm_s">
+              <img class="thumbnail" src="thumbnails/thumbnail-9.jpg">
+            </a>
+            <div class="video-time">5:03</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@TEDEd">
+                <img class="profile-picture" src="channel-pictures/channel-9.jpg">
+              </a>
+                <div class="channel-tooltip">
+                  <img src="channel-pictures/channel-9.jpg" class="channel-tooltip-picture">
+                  <div>
+                    <div class="channel-tooltip-name">TED-Ed</div>
+                    <div class="channel-tooltip-subscribers">21.8M subscribers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://www.youtube.com/watch?v=w6JFRi0Qm_s"> 
+                The genius of Marie Curie - Shohini Ghose
+              </a>
+              <p class="video-author">
+                TED-Ed
+              </p>
+              <p class="video-stats">
+                3.9M views &#183; 8 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=Gx5qb1uHss4">
+              <img class="thumbnail" src="thumbnails/thumbnail-10.jpg">
+            </a>
+            <div class="video-time">18:48</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@Indently">
+                <img class="profile-picture" src="channel-pictures/channel-10.jpg">
+              </a>
+                <div class="channel-tooltip">
+                  <img src="channel-pictures/channel-10.jpg" class="channel-tooltip-picture">
+                  <div>
+                    <div class="channel-tooltip-name">Indently</div>
+                    <div class="channel-tooltip-subscribers">303K subscribers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://www.youtube.com/watch?v=Gx5qb1uHss4"> 
+                10 Important Python Concepts In 20 Minutes
+              </a>
+              <p class="video-author">
+                Indently
+              </p>
+              <p class="video-stats">
+                929K views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=4RQuPYiJq1A">
+              <img class="thumbnail" src="thumbnails/thumbnail-11.jpg">
+            </a>
+            <div class="video-time">17:22</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@GothamChess">
+                <img class="profile-picture" src="channel-pictures/channel-11.jpg">
+              </a>
+                <div class="channel-tooltip">
+                  <img src="channel-pictures/channel-11.jpg" class="channel-tooltip-picture">
+                  <div>
+                    <div class="channel-tooltip-name">GothamChess</div>
+                    <div class="channel-tooltip-subscribers">6.66M subscribers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://www.youtube.com/watch?v=4RQuPYiJq1A"> 
+                This Grandmaster Sacrificed EVERY PIECE...
+              </a>
+              <p class="video-author">
+                GothamChess
+              </p>
+              <p class="video-stats">
+                1.5M views &#183; 4 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=zsC61g36EqM">
+              <img class="thumbnail" src="thumbnails/thumbnail-12.jpg">
+            </a>
+            <div class="video-time">2:07</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <div class="channel-picture-container">
+                <a href="https://www.youtube.com/@NatGeoAnimals">
+                <img class="profile-picture" src="channel-pictures/channel-12.jpg">
+              </a>
+                <div class="channel-tooltip">
+                  <img src="channel-pictures/channel-12.jpg" class="channel-tooltip-picture">
+                  <div>
+                    <div class="channel-tooltip-name">Nat Geo Animals</div>
+                    <div class="channel-tooltip-subscribers">6.06M subscribers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-info">
+              <a class="video-title" href="https://www.youtube.com/watch?v=zsC61g36EqM"> 
+                Breaching Basking Sharks | World's Weirdest
+              </a>
+              <p class="video-author">
+                Nat Geo Animals
+              </p>
+              <p class="video-stats">
+                2.6M views &#183; 9 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </body>
+</html>
